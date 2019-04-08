@@ -1,0 +1,37 @@
+class User(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
+    sex = models.CharField(max_length=1)
+    role = models.BooleanField()
+    hashedPassword = models.CharField(max_length=1)
+
+
+class Dish(models.Model):
+    name = models.CharField(max_length=200)
+    preparation = models.TextField()
+    imagePath = models.CharField(max_length=200)
+
+
+class Restaurant(models.Model):
+    name = models.CharField(max_length=200)
+
+
+class Ingredient(models.Model):
+    name = models.CharField(max_length=200)
+    unitaryPrice = models.FloatField()
+
+
+class DishInterest(models.Model):
+    score = models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
+
+
+class DishInMenu(models.Model):
+    dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+
+
+class DishIngredients(models.Model):
+    dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
