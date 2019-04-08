@@ -2,18 +2,6 @@ from django.db import models
 
 
 # Create your models here.
-class User(models.Model):
-    name = models.CharField(max_length=200)
-    email = models.CharField(max_length=200)
-    sex = models.CharField(max_length=1)
-    role = models.BooleanField()
-    hashedPassword = models.CharField(max_length=1)
-
-
-class Restaurant(models.Model):
-    name = models.CharField(max_length=200)
-
-
 class Ingredient(models.Model):
     name = models.CharField(max_length=200)
     unitaryPrice = models.FloatField()
@@ -23,11 +11,23 @@ class Dish(models.Model):
     name = models.CharField(max_length=200)
     preparation = models.TextField()
     imagePath = models.CharField(max_length=200)
-    restaurant = models.ManyToManyField(Restaurant)
-    user = models.ManyToManyField(User,
-                                  through='DishInterest')
     ingredient = models.ManyToManyField(Ingredient,
                                         through='DishIngredients')
+
+
+class Restaurant(models.Model):
+    name = models.CharField(max_length=200)
+    dish = models.ManyToManyField(Dish)
+
+
+class User(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
+    sex = models.CharField(max_length=1)
+    role = models.BooleanField()
+    hashedPassword = models.CharField(max_length=1)
+    dish = models.ManyToManyField(Dish,
+                                  through='DishInterest')
 
 
 class DishIngredients(models.Model):
