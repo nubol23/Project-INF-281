@@ -3,31 +3,52 @@ from django.db import models
 
 # Create your models here.
 class Ingredient(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
     unitaryPrice = models.FloatField()
+
+    def __str__(self):
+        return self.name
 
 
 class Dish(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
     preparation = models.TextField()
+    uploader = models.CharField(max_length=200)
     imagePath = models.CharField(max_length=200)
-    ingredient = models.ManyToManyField(Ingredient,
-                                        through='DishIngredients')
+    ingredients = models.ManyToManyField(Ingredient,
+                                         through='DishIngredients')
+
+    def __str__(self):
+        return self.name
 
 
 class Restaurant(models.Model):
-    name = models.CharField(max_length=200)
-    dish = models.ManyToManyField(Dish)
+    name = models.CharField(max_length=200, unique=True)
+    dishes_in_menu = models.ManyToManyField(Dish)
+
+    def __str__(self):
+        return self.name
 
 
 class User(models.Model):
-    name = models.CharField(max_length=200)
+    username = models.CharField(max_length=200, unique=True)
     email = models.CharField(max_length=200)
-    sex = models.CharField(max_length=1)
+    # sex = models.CharField(max_length=1)
+
+    # 0: Normal user, 1: Admin
     role = models.BooleanField()
-    hashedPassword = models.CharField(max_length=1)
-    dish = models.ManyToManyField(Dish,
-                                  through='DishInterest')
+
+    hashedPassword = models.CharField(max_length=200)
+    # country = models.CharField(max_length=200)
+    # age = models.IntegerField()
+    description = models.TextField()
+
+    liked_dishes = models.ManyToManyField(Dish,
+                                          through='DishInterest')
+    follow = models.ManyToManyField('self', symmetrical=False)
+
+    def __str__(self):
+        return self.username
 
 
 class DishIngredients(models.Model):
@@ -36,11 +57,17 @@ class DishIngredients(models.Model):
     dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return str(self.quantity) + ' ' + str(self.unit)
+
 
 class DishInterest(models.Model):
     score = models.IntegerField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return 'score: ' + str(self.score)
 
 
 """

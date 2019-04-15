@@ -15,7 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from food_recommender.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('list-feed/', list_dishes_news_feed, name='list_feed'),
+    path('list-user-dish/', list_dishes_users, name='list_users_dishes'),
+    path('register/', register, name='register'),
+    path('follow/', follow, name='follow'),
+    path('unfollow/', unfollow, name='unfollow'),
+    path('user-list/', list_users, name='list_users'),
+    path('authenticate/', authenticate, name='auth'),
+    path('user-information/', show_user_information, name='information'),
+    path('like-dish/', like_dish, name='like'),
+    path('dislike-dish/', dislike_dish, name='dislike'),
+    path('list-liked-dishes/', list_dishes_i_like, name='liked_dishes'),
 ]
