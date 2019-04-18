@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from food_recommender.views import *
 
 urlpatterns = [
@@ -30,4 +32,8 @@ urlpatterns = [
     path('like-dish/', like_dish, name='like'),
     path('dislike-dish/', dislike_dish, name='dislike'),
     path('list-liked-dishes/', list_dishes_i_like, name='liked_dishes'),
-]
+    path('get-dish-information/', get_dish_information),
+    path('filter-dishes/', filter_dish_by_ingredient),
+    path('upload-dish/', create_dish),
+    path('remove-dish/', delete_dish),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

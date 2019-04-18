@@ -14,6 +14,10 @@ class Dish(models.Model):
     name = models.CharField(max_length=200, unique=True)
     preparation = models.TextField()
     uploader = models.CharField(max_length=200)
+
+    plain_text_ingredients = models.TextField()
+    estimated_price = models.IntegerField()
+
     imagePath = models.CharField(max_length=200)
     ingredients = models.ManyToManyField(Ingredient,
                                          through='DishIngredients')
