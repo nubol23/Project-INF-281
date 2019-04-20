@@ -14,6 +14,11 @@ from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.conf import settings
 import os
 
+from hashlib import sha3_256
+from base64 import b64encode
+import pyimgur
+from pyimgur.__init__ import Image, Album
+
 from food_recommender.models import *
 # Create your views here.
 
@@ -28,7 +33,8 @@ def register(request):
         username: AnyStr = data['username']
         email: AnyStr = data['email']
         role: bool = bool(int(data['role']))
-        hashed_password: AnyStr = data['hashed_password']
+        # hashed_password: AnyStr = data['password']
+        hashed_password: AnyStr = sha3_256(data['password'].encode('utf-8')).digest()
         description: AnyStr = data['description']
 
         """DBG"""
@@ -54,7 +60,7 @@ def authenticate(request):
         data = request.POST.copy()
 
         username = data['username']
-        password = data['password']
+        password = sha3_256(data['password'].encode('utf-8')).digest()
 
         if len(User.objects.filter(username=username).filter(hashedPassword=password)) == 1:
             return HttpResponse('True')
@@ -385,7 +391,7 @@ def filter_dish_by_ingredient(request):
 
         return JsonResponse(response)
 
-
+import matplotlib.pyplot as plt
 @csrf_exempt
 def create_dish(request):
     if request.method == 'POST':
@@ -394,17 +400,23 @@ def create_dish(request):
         image_buffer = np.frombuffer(byte_image, np.uint8)
         image: np.ndarray = cv2.imdecode(image_buffer, cv2.IMREAD_COLOR)
         image = cv2.resize(image, (507, 458))
+        _, byte_image_resized = cv2.imencode('.png', image)
 
-        name: str = request.POST['name']
+        name: str = request.POST['dish_name']
         preparation = request.POST['preparation']
-        uploader = request.POST['uploader']
+        uploader = request.POST['username']
         plain_text_ingredients = request.POST['plain_text_ingredients']
         estimated_price = float(request.POST['estimated_price'])
-        imagePath = '_'.join(name.lower().split())+'.png'
+        # imagePath = '_'.join(name.lower().split())+'.png'
 
         # Save Image
         # print(os.path.join(settings.MEDIA_ROOT, imagePath))
-        cv2.imwrite(os.path.join(settings.MEDIA_ROOT, imagePath), image)
+        im = pyimgur.Imgur('3cb63aac091c259')
+        link = upload_image(instance=im, byte_image=byte_image_resized)
+        print(link)
+        imagePath = link
+
+        # cv2.imwrite(os.path.join(settings.MEDIA_ROOT, imagePath), image)
 
         # Save Dish
         Dish.objects.create(name=name,
@@ -412,7 +424,12 @@ def create_dish(request):
                             uploader=uploader,
                             plain_text_ingredients=plain_text_ingredients,
                             estimated_price=estimated_price,
-                            imagePath='media/'+imagePath)
+                            imagePath=imagePath)
+                            # imagePath='media/'+imagePath)
+
+        # Link user to dish
+        # request.POST['score']
+        like_dish(request)
 
         return HttpResponse('Correctamente Agregado')
 
@@ -420,15 +437,46 @@ def create_dish(request):
 @csrf_exempt
 def delete_dish(request):
     if request.method == 'POST':
-        name = request.POST['name']
-        imagePath = '_'.join(name.lower().split()) + '.png'
+        name = request.POST['dish_name']
+
+        # request.POST['username']
+        dislike_dish(request)
+        # imagePath = '_'.join(name.lower().split()) + '.png'
 
         dish = Dish.objects.filter(name=name)[0]
 
         dish.delete()
-        os.remove(os.path.join(settings.MEDIA_ROOT, imagePath))
+        # os.remove(os.path.join(settings.MEDIA_ROOT, imagePath))
 
         return HttpResponse('Eliminado Correctamente')
+
+
+def upload_image(instance=None, byte_image=None, url=None, title=None, description=None,
+                 album=None):
+    """
+    Upload the image at either path or url.
+
+    :param path: The path to the image you want to upload.
+    :param url: The url to the image you want to upload.
+    :param title: The title the image will have when uploaded.
+    :param description: The description the image will have when uploaded.
+    :param album: The album the image will be added to when uploaded. Can
+        be either a Album object or it's id. Leave at None to upload
+        without adding to an Album, adding it later is possible.
+        Authentication as album owner is necessary to upload to an album
+        with this function.
+
+    :returns: An Image object representing the uploaded image.
+    """
+
+    image = b64encode(byte_image)
+
+    payload = {'album_id': album, 'image': image,
+               'title': title, 'description': description}
+
+    resp = instance._send_request(instance._base_url + "/3/image",
+                              params=payload, method='POST')
+    return resp['link']
 
 # TODO:
 # DONE:
@@ -436,3 +484,5 @@ def delete_dish(request):
 #       GET IMAGES FROM URL MEDIA FOLDER,
 #       UPLOAD IMAGES TO SERVER,
 #       UPLOAD AND DELETE DISHES,
+#       LINK USER TO UPLOADED DISH VIA A SCORE OF 6
+#       WHEN DELETING DISH, WE ALSO HAVE TO DELETE THE RELATIONSHIP

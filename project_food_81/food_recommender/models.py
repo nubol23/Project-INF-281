@@ -19,8 +19,8 @@ class Dish(models.Model):
     estimated_price = models.IntegerField()
 
     imagePath = models.CharField(max_length=200)
-    ingredients = models.ManyToManyField(Ingredient,
-                                         through='DishIngredients')
+    # ingredients = models.ManyToManyField(Ingredient,
+    #                                      through='DishIngredients')
 
     def __str__(self):
         return self.name

@@ -25,7 +25,8 @@ SECRET_KEY = '(hyee^e+io#99-u6^4nm2hp_d8p33fq&tqwhj&y=5!ldh+7z-u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['127.0.0.1', 'proyeto-81.appspot.com']
+ALLOWED_HOSTS = ['proyeto-81.appspot.com']
 
 
 # Application definition
@@ -74,17 +75,47 @@ WSGI_APPLICATION = 'project_food_81.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'project_food_database',
-        'USER': 'project_food_user',
-        'PASSWORD': 'project_food',
-        'HOST': 'localhost',
-        'PORT': '',
+# [START db_setup]
+if os.getenv('GAE_APPLICATION', None):
+    # Running on production App Engine, so connect to Google Cloud SQL using
+    # the unix socket at /cloudsql/<your-cloudsql-connection string>
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'HOST': '/cloudsql/proyeto-81:us-central1:proyecto-81-db',
+            'USER': 'project_food_user',
+            'PASSWORD': 'project_food',
+            'NAME': 'project_food_database',
+        }
     }
-}
+else:
+    # Running locally so connect to either a local MySQL instance or connect
+    # to Cloud SQL via the proxy.  To start the proxy via command line:
+    #    $ cloud_sql_proxy -instances=[INSTANCE_CONNECTION_NAME]=tcp:3306
+    # See https://cloud.google.com/sql/docs/mysql-connect-proxy
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'HOST': '127.0.0.1',
+            'PORT': '3306',
+            'NAME': 'project_food_database',
+            'USER': 'project_food_user',
+            'PASSWORD': 'project_food',
+        }
+    }
+# [END db_setup]
 
+"""OLD LOCAL CONFIGURATION"""
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'project_food_database',
+#             'USER': 'project_food_user',
+#             'PASSWORD': 'project_food',
+#             'HOST': 'localhost',
+#             'PORT': '',
+#         }
+#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -123,5 +154,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_ROOT = '/home/nubol23/Desktop/Codes/Proyecto_281/project_food_81/food_recommender/media'
+# STATIC_ROOT = 'static'
+# MEDIA_ROOT = '/home/nubol23/Desktop/Codes/Proyecto_281/project_food_81/media'
+# correct_path = '/'.join(os.path.dirname(os.path.abspath(__file__)).split('/')[:-1])
+# MEDIA_ROOT = os.path.join(correct_path, 'media')
+MEDIA_ROOT = 'media'
 MEDIA_URL = 'media/'
