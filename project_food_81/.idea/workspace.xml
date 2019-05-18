@@ -2,75 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3b92499-dcef-4674-8498-0c3338a4d8fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/requests-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/requests-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/asado_al_horno.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/asado_al_horno.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/baba_ganoush.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/baba_ganoush.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/batido_de_dos_colores.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/batido_de_dos_colores.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/batido_de_frutas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/batido_de_frutas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/batido_de_pina_y_frutillas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/batido_de_pina_y_frutillas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/budin_de_zapallo_italiano.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/budin_de_zapallo_italiano.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/carne_al_jugo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/carne_al_jugo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/carpaccio_de_verduras.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/carpaccio_de_verduras.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/charquican.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/charquican.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/chips_de_manzana_con_canela.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/chips_de_manzana_con_canela.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/crema_de_tomates.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/crema_de_tomates.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/crema_de_zapallo_camote.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/crema_de_zapallo_camote.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/croquetas_de_atun_y_arroz.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/croquetas_de_atun_y_arroz.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/curry_de_verduras.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/curry_de_verduras.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_cesar.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_cesar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_con_salmon.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_con_salmon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_de_cous-cous_al_azafran.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_de_cous-cous_al_azafran.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_de_porotos_granados.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_de_porotos_granados.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_de_quinoa_y_pollo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_de_quinoa_y_pollo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_griega.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_griega.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/ensalada_veraniega.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/ensalada_veraniega.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/garbanzos.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/garbanzos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/guiso_de_verduras.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/guiso_de_verduras.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/guiso_zapallo_italiano.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/guiso_zapallo_italiano.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/hamburguesas_de_lentejas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/hamburguesas_de_lentejas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/lentejas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/lentejas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/lomo_vetado_a_la_pimienta_con_trilogia_de_champinones_y_pure_de_albahacas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/lomo_vetado_a_la_pimienta_con_trilogia_de_champinones_y_pure_de_albahacas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/palanca_a_la_parrilla.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/palanca_a_la_parrilla.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/parrilla_de_verduras_asadas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/parrilla_de_verduras_asadas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/pechugas_de_pollo_al_romero.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/pechugas_de_pollo_al_romero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/pescado_con_costra_de_quinoa.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/pescado_con_costra_de_quinoa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/pimientos_rellenos.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/pimientos_rellenos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/pollo_a_la_parrilla_con_ensalada_a_la_chilena.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/pollo_a_la_parrilla_con_ensalada_a_la_chilena.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/pollo_arvejado.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/pollo_arvejado.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/pollo_grillado_con_verduras_asadas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/pollo_grillado_con_verduras_asadas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/porotos_granados.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/porotos_granados.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/roastbeef_con_mostaza_y_mix_de_pimientas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/roastbeef_con_mostaza_y_mix_de_pimientas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/rollitos_de_pan_con_huevo_y_jamon.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/rollitos_de_pan_con_huevo_y_jamon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/salmon_al_horno.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/salmon_al_horno.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/semola_con_leche.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/semola_con_leche.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/sopa_de_zapallitos_italianos_y_albahaca.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/sopa_de_zapallitos_italianos_y_albahaca.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/tataki_de_res_en_costra_de_hierbas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/tataki_de_res_en_costra_de_hierbas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/terrina_de_vegetales_asados.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/terrina_de_vegetales_asados.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/tortilla_de_porotos_verdes.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/tortilla_de_porotos_verdes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/tortilla_de_verduras.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/tortilla_de_verduras.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/wok_de_verduras_salteadas.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/wok_de_verduras_salteadas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/wrap_de_atun.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/wrap_de_atun.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/wrap_de_ensalada_griega.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/wrap_de_ensalada_griega.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/wrap_de_pollo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/wrap_de_pollo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/media/wrap_de_pollo_al_cardamomo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/wrap_de_pollo_al_cardamomo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/food_recommender/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0002_auto_20190408_0550.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0003_dishingredients.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0004_auto_20190408_0609.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0005_auto_20190408_0632.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0006_auto_20190409_0413.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0007_auto_20190409_0522.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0008_auto_20190414_0456.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0009_auto_20190415_0018.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0010_auto_20190415_0019.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0011_dish_uploader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0012_auto_20190415_0138.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0013_auto_20190415_0152.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/migrations/0014_auto_20190418_0510.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/food_recommender/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/food_recommender/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food_recommender/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/food_recommender/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_food_81/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_food_81/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../requests.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../requests.ipynb" afterDir="false" />
@@ -95,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/food_recommender/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="392">
+              <caret line="162" column="42" selection-start-line="162" selection-start-column="42" selection-end-line="162" selection-end-column="42" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -108,27 +41,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/machine_learning/lib/python3.7/site-packages/pyimgur/__init__.py">
+        <entry file="file://$PROJECT_DIR$/project_food_81/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="541" column="8" selection-start-line="541" selection-start-column="8" selection-end-line="541" selection-end-column="8" />
-              <folding>
-                <element signature="e#1382#1410#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3584">
+              <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project_food_81/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
@@ -140,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+            <state relative-caret-position="1792">
+              <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -149,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_food_81/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
+            <state relative-caret-position="1056">
               <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
@@ -195,11 +116,11 @@
       <list>
         <option value="$PROJECT_DIR$/food_recommender/models.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/project_food_81/urls.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/app.yaml" />
+        <option value="$PROJECT_DIR$/project_food_81/urls.py" />
         <option value="$PROJECT_DIR$/project_food_81/settings.py" />
         <option value="$PROJECT_DIR$/food_recommender/views.py" />
-        <option value="$PROJECT_DIR$/app.yaml" />
       </list>
     </option>
   </component>
@@ -213,34 +134,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project_food_81" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_food_81" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_food_81" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_food_81" type="462c0819:PsiDirectoryNode" />
-              <item name="food_recommender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_food_81" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_food_81" type="462c0819:PsiDirectoryNode" />
-              <item name="project_food_81" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -309,15 +207,18 @@
       <workItem from="1555558153979" duration="11041000" />
       <workItem from="1555713576608" duration="3122000" />
       <workItem from="1555730134558" duration="10091000" />
+      <workItem from="1555788304331" duration="913000" />
+      <workItem from="1556035665661" duration="1172000" />
+      <workItem from="1557043056757" duration="133000" />
+      <workItem from="1557805758649" duration="268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47372000" />
+    <option name="totallyTimeSpent" value="49858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="960" height="1046" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33260393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -383,23 +284,6 @@
     <entry file="file://$PROJECT_DIR$/project_food_81/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/food_recommender/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_food_81/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -409,7 +293,7 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/machine_learning/lib/python3.7/site-packages/pyimgur/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="17216">
           <caret line="541" column="8" selection-start-line="541" selection-start-column="8" selection-end-line="541" selection-end-column="8" />
           <folding>
             <element signature="e#1382#1410#0" expanded="true" />
@@ -417,27 +301,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/food_recommender/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+        <state relative-caret-position="672">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_food_81/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/food_recommender/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3584">
+          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -445,6 +319,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1792">
+          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_food_81/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/food_recommender/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="162" column="42" selection-start-line="162" selection-start-column="42" selection-end-line="162" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

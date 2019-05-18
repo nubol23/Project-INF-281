@@ -26,7 +26,7 @@ SECRET_KEY = '(hyee^e+io#99-u6^4nm2hp_d8p33fq&tqwhj&y=5!ldh+7z-u'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['127.0.0.1', 'proyeto-81.appspot.com']
-ALLOWED_HOSTS = ['proyeto-81.appspot.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'proyeto-81.appspot.com']
 
 
 # Application definition

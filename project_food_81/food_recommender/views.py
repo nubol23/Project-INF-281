@@ -159,7 +159,8 @@ def list_dishes_news_feed(request):
 @csrf_exempt
 def list_dishes_users(request):
     if request.method == 'GET':
-        users = User.objects.all()
+        # users = User.objects.all()
+        users = User.objects.order_by('?')
 
         users_uploaded_dishes = list()
         for user in users:
