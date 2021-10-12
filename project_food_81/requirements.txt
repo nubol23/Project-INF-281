@@ -40,7 +40,7 @@ mistune==0.8.4
 mock==2.0.0
 numpy==1.15.4
 olefile==0.46
-opencv-python==4.0.0.21
+opencv-python==4.1.1.26
 pandocfilters==1.4.2
 parso==0.3.1
 pbr==5.1.2
